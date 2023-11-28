@@ -6,7 +6,7 @@ export const Searchbar = ({ onSubmit }) => {
   const [searchName, setSearchName] = useState('');
 
   const onSubmitForm = event => {
-    event.prevDefault();
+    event.preventDefault();
     setSearchName(valueInput.trim());
 
     onSubmit(searchName);
