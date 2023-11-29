@@ -7,9 +7,10 @@ export const Searchbar = ({ onSubmit }) => {
 
   const onSubmitForm = event => {
     event.preventDefault();
+
     setSearchName(valueInput.trim());
 
-    onSubmit(searchName);
+    onSubmit(valueInput);
 
     event.target.reset();
   };
@@ -28,7 +29,7 @@ export const Searchbar = ({ onSubmit }) => {
           type="text"
           autoComplete="off"
           value={valueInput}
-          name="searchName"
+          name={searchName}
           autoFocus
           placeholder="Search images and photos"
           onChange={onInputChange}

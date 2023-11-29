@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from 'components/Button/button';
 import { Loader } from 'components/Loader/Loader';
 import { ImageGallery } from 'components/ImageGallery/imageGallery';
-import { Searchbar } from 'components/Searchbar/searchba';
+import { Searchbar } from 'components/Searchbar/searchbar';
 import { getImages } from 'components/API/api';
 import css from './app.module.css';
 
